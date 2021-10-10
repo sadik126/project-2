@@ -17,15 +17,15 @@ function display() {
 
 }
 
-display.prototype.add = function(book){
+display.prototype.add = function(Book){
     console.log("adding to form");
     tablebody = document.getElementById('tablebody');
     let uistring = `
  <tr>
     
-    <td>${book.name}</td>
-    <td>${book.author}</td>
-    <td>${book.type}</td>
+    <td>${Book.name}</td>
+    <td>${Book.author}</td>
+    <td>${Book.type}</td>
 </tr>`;
 tablebody.innerHTML += uistring;
 }
@@ -72,7 +72,7 @@ function libraryformsubmit(e) {
     console.log(Book);
 
     let Display = new display();
-    Display.add(book); 
+    Display.add(Book); 
     Display.clear();
     e.preventDefault();
 
