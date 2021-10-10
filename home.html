@@ -44,7 +44,7 @@
         <h1>MY LIBRARY FORM</h1>
         <br>
 
-        <form>
+        <form id="libraryform">
             <div class="form-group row">
                 <label for="name" class="col-sm-2 col-form-label">Name</label>
                 <div class="col-sm-10">
@@ -64,8 +64,8 @@
                     <legend class="col-form-label col-sm-2 pt-0">Type</legend>
                     <div class="col-sm-10">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="type" id="fiction"
-                                value="fiction" checked>
+                            <input class="form-check-input" type="radio" name="type" id="fiction" value="fiction"
+                                checked>
                             <label class="form-check-label" for="gridRadios1">
                                 Fiction
                             </label>
@@ -78,8 +78,7 @@
                             </label>
                         </div>
                         <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="type" id="horror"
-                                value="horror" >
+                            <input class="form-check-input" type="radio" name="type" id="horror" value="horror">
                             <label class="form-check-label" for="gridRadios3">
                                 Horror
                             </label>
@@ -88,7 +87,7 @@
                 </div>
             </fieldset>
             <br>
-        
+
             <br>
             <div class="form-group row">
                 <div class="col-sm-10">
@@ -96,7 +95,35 @@
                 </div>
             </div>
         </form>
+
+        <br>
+
+        <div id="table">
+
+            <h1 class="text-center">Your Books</h1>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                       
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Type</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                    <tr>
+                       
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
