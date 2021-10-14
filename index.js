@@ -1,6 +1,31 @@
 console.log("hello sadik")
 
 
+
+
+// let addbtn = document.getElementById('addbtn');
+// addbtn.addEventListener('click',function(e){
+
+// let name = document.getElementById('name');
+// let author = document.getElementById('author');
+// let fiction = document.getElementById('fiction');
+// let programming = document.getElementById('programming');
+// let horror = document.getElementById('horror');
+
+// let tablebody = localStorage.getItem('tablebody');
+// if(tablebody==null)
+// {
+//     tableobj = [];
+// }
+// else
+// {
+//     tableobj= JSON.parse('tablebody');
+// }
+
+// }
+// )
+
+
 //constructor : create book object
 
 function book(name, author, type) {
@@ -99,6 +124,8 @@ function libraryformsubmit(e) {
         type = horror.value;
 
     }
+
+
     // create object book
     let Book = new book(name, author, type);
     console.log(Book);
